@@ -2,8 +2,6 @@
 fetch('https://jsonplaceholder.typicode.com/posts')
 .then((response) => response.json())
 .then((data) => {
-    //JSON.stringify(data)
-    //console.log(data)
     data.forEach(item => {
         let main = document.querySelector('.main')
         let div = document.createElement('div')
